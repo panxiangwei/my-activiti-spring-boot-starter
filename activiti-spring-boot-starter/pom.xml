@@ -6,14 +6,23 @@
 
     <groupId>com.qing.starter</groupId>
     <artifactId>activiti-spring-boot-starter</artifactId>
-    <version>6.0.0</version>
+    <version>6.0.0-boot2.3.10</version>
 
     <dependencies>
         <dependency>
             <groupId>com.qing.starter</groupId>
             <artifactId>activiti-spring-boot-starter-autoconfigurer</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.0-boot2.3.10</version>
         </dependency>
     </dependencies>
-    
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://192.168.1.91:8081/repository/libs-landsea-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://192.168.1.91:8081/repository/libs-landsea-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
